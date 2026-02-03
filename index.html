@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Conditional Statements</title>
+</head>
+<body>
+    <h1>JavaScript Conditional Statements</h1>
+<script>
+
+    let n = Number(prompt("Enter Number"));
+    if(n % 2 == 0){
+        console.log("Number is Even")
+    }else{
+        console.log("Number is Odd")
+    }
+
+    let num = Number(prompt("Enter Number to check that no is Pos, Neg, Zero"));
+    if(num == 0){
+        console.log("Given Number is Zero")
+    }else if(num > 0){
+        console.log("Given Number is Positive")
+    }else{
+        console.log("Given Number is Negative")
+    }
+
+    let usrnm = prompt("Enter Username");
+    let pswrd = Number(prompt("Enter Password"));
+    if(usrnm == "admin" && pswrd == 1234){
+        console.log("Login Successful")
+    }else{
+         console.log("Access Denied")
+    }
+
+    let day = Number(prompt("Enter a number (1-7) to check the day"));
+        switch(day){
+            case 1:
+                console.log("Day is Monday");
+                break;
+            case 2:
+                console.log("Day is Tuesday");
+                break;
+            case 3:
+                console.log("Day is Wednesday");
+                break;
+            case 4:
+                console.log("Day is Thursday");
+                break;
+            case 5:
+                console.log("Day is Friday");
+                break;
+            case 6:
+                console.log("Day is Saturday");
+                break;
+            case 7:
+                console.log("Day is Sunday");
+                break;
+            default:
+                console.log("Invalid Day");
+
+        }
+
+</script>
+
+</body>
+</html>
